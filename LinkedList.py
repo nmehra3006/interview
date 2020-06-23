@@ -15,7 +15,6 @@ class Node(object):
 class LinkedList(object):
 
     def __init__(self):
-        # type: () -> object
         self.head = None
         self.tail = None
         self.count = 0
@@ -193,3 +192,11 @@ merged_n_list.print_list()
 # print ll.detect_loop()
 # print ll.add_loop()
 # print ll.detect_loop()
+ll = LinkedList()
+ll.add_node(5)
+ll.add_node(6)
+ll.add_node(7)
+ll.add_node(6)
+ll.add_node(6)
+ll.delete_node(6)
+ll.print_list()
